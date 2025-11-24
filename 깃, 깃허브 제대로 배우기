@@ -4,10 +4,10 @@
 git --version
 
 # 사용자 이름 설정 (커밋 기록에 사용될 이름)
-git config --global user.name "Yeujeen"
+git config --global user.name "이름"
 
 # 사용자 이메일 설정 (커밋 기록에 사용될 이메일)
-git config --global user.email "yyeujeen@gmail.com"
+git config --global user.email "xxx@xxx.com"
 
 # 설정된 이름과 이메일 확인
 git config user.name
