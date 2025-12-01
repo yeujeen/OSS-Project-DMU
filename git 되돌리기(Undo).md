@@ -10,15 +10,12 @@ git reset --hard HEAD~2
 ```
 ## 2. Mixed: 커밋은 취소하되, 작업하던 파일은 남기기 (기본값)
 git reset HEAD~
-# 또는
+또는
 git reset [commit_ID]
 
-```
 ## 3. Soft: 커밋만 취소하고, 바로 다시 커밋할 수 있게 스테이징 상태 유지
 git reset --soft HEAD~
 
-```
-```
 ## 2. Git Revert: 이력 남기고 취소하기
 Reset과 달리 과거 기록을 삭제하지 않고, **'특정 커밋을 거꾸로 실행하는 새로운 커밋'**을 만듭니다.
 
@@ -44,7 +41,6 @@ git reset --hard ORIG_HEAD
 # 가장 최근의 stash를 불러오면서, 스테이징 상태(--index)까지 그대로 복원
 git stash apply --index
 
-```
 ```
 ## 4. Reset vs Checkout 비교
 Reset (git reset 9033)
