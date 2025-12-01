@@ -4,16 +4,23 @@
 HEAD 포인터를 과거의 특정 시점으로 이동시킵니다. 옵션에 따라 작업 내역을 살릴지, 완전히 지울지 결정합니다.
 
 ### 1. Hard: 작업 내용까지 깔끔하게 날려버리기 (2단계 전으로)
-```bash
+```Bash
+
 git reset --hard HEAD~2
+
+
 2. Mixed: 커밋은 취소하되, 작업하던 파일은 남기기 (기본값)
-Bash
+
+```Bash
 
 git reset HEAD~
 # 또는
 git reset [commit_ID]
+
+
 3. Soft: 커밋만 취소하고, 바로 다시 커밋할 수 있게 스테이징 상태 유지
-Bash
+
+```Bash
 
 git reset --soft HEAD~
 
@@ -35,16 +42,16 @@ git revert --no-edit HEAD
 git revert --abort
 
 ```
-# 3. 복구 및 임시 저장
+### 3. 복구 및 임시 저장
 Reset 취소 (실수로 Reset 했을 때)
 Reset 직전의 HEAD 위치는 ORIG_HEAD에 저장됩니다. 이를 이용해 복구할 수 있습니다.
-
 
 ```Bash
 
 git reset --hard ORIG_HEAD
+
 Stash 적용 (임시 저장 불러오기)
-Bash
+```Bash
 
 # 가장 최근의 stash를 불러오면서, 스테이징 상태(--index)까지 그대로 복원
 git stash apply --index
