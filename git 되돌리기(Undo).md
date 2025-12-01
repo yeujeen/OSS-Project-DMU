@@ -21,13 +21,13 @@ Reset과 달리 과거 기록을 삭제하지 않고, **'특정 커밋을 거꾸
 
 Tip: 이미 원격 저장소(GitHub 등)에 push한 커밋을 되돌릴 때는 반드시 reset 대신 revert를 사용해야 협업 시 충돌이 발생하지 않습니다.
 '''bash
-# 마지막 커밋의 변경 사항을 취소하는 '새 커밋' 생성
+마지막 커밋의 변경 사항을 취소하는 '새 커밋' 생성
 git revert HEAD
 
-# 커밋 메시지 작성 에디터를 열지 않고 바로 revert 진행
+커밋 메시지 작성 에디터를 열지 않고 바로 revert 진행
 git revert --no-edit HEAD
 
-# revert 도중 충돌(Conflict) 발생 시 취소하고 싶을 때
+revert 도중 충돌(Conflict) 발생 시 취소하고 싶을 때
 git revert --abort
 
 ```
