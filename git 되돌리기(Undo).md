@@ -16,12 +16,14 @@ git reset [commit_ID]
 Bash
 
 git reset --soft HEAD~
-2. Git Revert: 이력 남기고 취소하기
+
+```
+### 2. Git Revert: 이력 남기고 취소하기
 Reset과 달리 과거 기록을 삭제하지 않고, **'특정 커밋을 거꾸로 실행하는 새로운 커밋'**을 만듭니다.
 
 Tip: 이미 원격 저장소(GitHub 등)에 push한 커밋을 되돌릴 때는 반드시 reset 대신 revert를 사용해야 협업 시 충돌이 발생하지 않습니다.
 
-Bash
+```Bash
 
 # 마지막 커밋의 변경 사항을 취소하는 '새 커밋' 생성
 git revert HEAD
@@ -31,11 +33,14 @@ git revert --no-edit HEAD
 
 # revert 도중 충돌(Conflict) 발생 시 취소하고 싶을 때
 git revert --abort
-3. 복구 및 임시 저장
+
+```
+# 3. 복구 및 임시 저장
 Reset 취소 (실수로 Reset 했을 때)
 Reset 직전의 HEAD 위치는 ORIG_HEAD에 저장됩니다. 이를 이용해 복구할 수 있습니다.
 
-Bash
+
+```Bash
 
 git reset --hard ORIG_HEAD
 Stash 적용 (임시 저장 불러오기)
@@ -43,7 +48,9 @@ Bash
 
 # 가장 최근의 stash를 불러오면서, 스테이징 상태(--index)까지 그대로 복원
 git stash apply --index
-4. Reset vs Checkout 비교
+
+```
+### 4. Reset vs Checkout 비교
 Reset (git reset 9033)
 브랜치 포인터 자체가 이동합니다.
 
