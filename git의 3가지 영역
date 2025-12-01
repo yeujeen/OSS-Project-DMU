@@ -1,4 +1,4 @@
-1. 작업 디렉터리 (Working Directory)
+# 1. 작업 디렉터리 (Working Directory)
 다른 이름: 워킹 트리(Working Tree), 작업 폴더
 
 상태: Modified (수정됨, 추적 안 됨)
@@ -9,7 +9,7 @@
 
 이곳에서 수정한 내용은 git add를 하기 전까지는 Git이 영구적으로 저장하지 않습니다. (즉, 여기서 지우면 복구하기 어렵습니다.)
 
-2. 스테이지 영역 (Staging Area)
+# 2. 스테이지 영역 (Staging Area)
 다른 이름: 인덱스(Index), 캐시(Cache)
 
 상태: Staged (커밋 대기 중)
@@ -20,7 +20,7 @@
 
 마치 "택배 상자(커밋)를 포장하기 위해 물건을 잠시 올려두는 작업대"와 같습니다.
 
-3. 깃 저장소 (Repository)
+# 3. 깃 저장소 (Repository)
 다른 이름: Local Repository (로컬 저장소), .git 디렉터리
 
 상태: Committed (저장됨, 변경 없음)
