@@ -20,3 +20,8 @@ git config --global user.email "xxx@xxx.com"
 # 설정 확인
 git config user.name
 git config user.email
+
+# 줄바꿈 문자(Line Ending) 설정
+# 운영체제 간의 호환성 문제를 방지하기 위해 설정합니다.
+Windows: git config --global core.autocrlf true
+Mac/Linux: git config --global core.autocrlf input
